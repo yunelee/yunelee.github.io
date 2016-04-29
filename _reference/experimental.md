@@ -30,6 +30,6 @@ For content served from any other domain, experiments can be toggled in the devt
 AMP.toggleExperiment('experiment')
 {% endhighlight %}
 
-Any AMP file that includes experimental features will fail 
+Any AMP file that includes experimental features will fail
 [AMP validation](/docs/guides/validate.html).
 Remove these experimental components for production-ready AMP documents.

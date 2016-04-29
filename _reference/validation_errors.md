@@ -215,13 +215,13 @@ Tags with mandatory CDATA include:
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 {% endhighlight %}
 
-And: 
+And:
 
 {% highlight html %}
 <style amp-custom \\ Disallows a variety of specific css constructs like @import or !important.>
 {% endhighlight %}
 
-Detailed messages for this can be one of the following: 
+Detailed messages for this can be one of the following:
 
 * "Mandatory style boilerplate (js enabled)"
 * "Mandatory style boilerplate (noscript)"
@@ -525,7 +525,7 @@ The following lists the required parent for specific tags
   </tr>
 </table>
 
-This error occurs when a tag is a descendant of another tag 
+This error occurs when a tag is a descendant of another tag
 which doesn't validate.
 Currently, the only example is a <code>template</code> tag,
 which may not be nested under another <code>template</code> tag.

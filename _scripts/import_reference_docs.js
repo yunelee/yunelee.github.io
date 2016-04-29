@@ -44,13 +44,13 @@ function convertMarkdown(content, relativePath, headingToStrip) {
 
 	// this regular expression is crazy. Adds a newline before lists so they are parsed
 	// as proper lists by Jekyll.
-	content = content.replace(/(\n(?![^\S\n]*\*[^\S\n])(?![^\S\n]*\-)[^\n]+\n)([^\S\n]*?(?!\*\*)[\-\*])/gm, '$1\n$2');
+	content = content.replace(/(\n(?![^\S\n]*\*[^\S\n])(?![^\S\n]*\-)[^\n]+\n)([^\S\n]*?(?!\*\*)((\-\s)|(\*\s)|(1\.\s)))/gm, '$1\n$2');
 
 	// for comments to be parsed correctly as HTML, we need an extra line break
 	content = content.replace('<!---', '\n<!---');
 
 	// replace code
-	content = content.replace(/(\`\`\`)([A-z\-]+)?(\n((?!\`\`\`)[\s\S])+)(\`\`\`)/gm, '{% highlight $2 %}$3{% endhighlight %}');
+	content = content.replace(/(\`\`\`)(([A-z\-]*)\n)(((?!\`\`\`)[\s\S])+)(\`\`\`\n)/gm, '{% highlight $3 %}\n$4{% endhighlight %}\n');
 	content = content.replace(/\{\%\shighlight\s\s\%\}/g, '{% highlight html %}');
 
 	// create absolute urls from relative github urls
@@ -62,6 +62,14 @@ function convertMarkdown(content, relativePath, headingToStrip) {
 	return content;
 }
 
+// create folders if they do not exist yet
+if(!fs.existsSync('../_reference')) {
+	fs.mkdirSync('../_reference');
+}
+
+if(!fs.existsSync('../_reference/extended')) {
+	fs.mkdirSync('../_reference/extended');
+}
 
 // Download the specification
 downloadPage("spec/amp-html-format.md", function(pageContent) {
@@ -76,9 +84,9 @@ downloadPage("spec/amp-html-format.md", function(pageContent) {
 	});
 }, 1);
 
-
+// Download built-in AMP component ref docs
 ghrepo.contents('builtins', "master", function(err, data) {
-	
+
 	if(err) {
 		throw err;
 	}
@@ -111,7 +119,7 @@ ghrepo.contents('builtins', "master", function(err, data) {
 	});
 });
 
-
+// download extension component ref docs
 ghrepo.contents('extensions', "master", function(err, data) {
 
 	if(err) {
@@ -163,6 +171,11 @@ ghrepo.contents('extensions', "master", function(err, data) {
 				}
 			}
 
+			// if there's nothing in the folder for some reason, skip
+			if(!subComponent) {
+				return;
+			}
+
 			// download the page contents
 			downloadPage(subComponent.path, function(pageContent) {
 				// save it to the extended folder
@@ -180,6 +193,6 @@ ghrepo.contents('extensions', "master", function(err, data) {
 		});
 
 		index++;
-		
+
 	});
 });
