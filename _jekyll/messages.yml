@@ -1,0 +1,89 @@
+locales:
+  en:
+    menu:
+      faq: "FAQ"
+      blog: "Blog"
+      github: "GitHub"
+      docs: "Docs"
+    collections:
+      get_started: "Get Started"
+      guides: "Guides"
+      reference: "Reference"
+      support: "Support"
+  de:
+    menu:
+      faq: "FAQ"
+      blog: "Blog"
+      github: "GitHub"
+      docs: "Dokumentation"
+    collections:
+      get_started: "Hier starten"
+      guides: "Guides"
+      reference: "Referenz"
+      support: "Support"
+  es-419:
+    menu:
+      faq: "Preguntas frecuentes"
+      blog: "Blog"
+      github: "GitHub"
+      docs: "Documentos"
+    collections:
+      get_started: "Primeros pasos"
+      guides: "Guías"
+      reference: "Referencia"
+      support: "Soporte"
+  id:
+    menu:
+      faq: "Tanya-Jawab"
+      blog: "Blog"
+      github: "GitHub"
+      docs: "Dokumen"
+    collections:
+      get_started: "Memulai"
+      guides: "Panduan"
+      reference: "Referensi"
+      support: "Dukungan"
+  ja:
+    menu:
+      faq: "FAQ"
+      blog: "ブログ"
+      github: "GitHub"
+      docs: "ドキュメント"
+    collections:
+      get_started: "はじめに"
+      guides: "ガイド"
+      reference: "リファレンス"
+      support: "サポート"
+  ko:
+    menu:
+      faq: "FAQ"
+      blog: "블로그"
+      github: "GitHub"
+      docs: "문서"
+    collections:
+      get_started: "시작하기"
+      guides: "가이드"
+      reference: "참조"
+      support: "지원"
+  pt-br:
+    menu:
+      faq: "Perguntas frequentes"
+      blog: "Blog"
+      github: "GitHub"
+      docs: "Documentos"
+    collections:
+      get_started: "Primeiros passos"
+      guides: "Guias"
+      reference: "Referência"
+      support: "Suporte"
+  zh-cn:
+    menu:
+      faq: "常见问题"
+      blog: "博客"
+      github: "GitHub"
+      docs: "文档"
+    collections:
+      get_started: "入门指南"
+      guides: "指南"
+      reference: "参考"
+      support: "支持"
