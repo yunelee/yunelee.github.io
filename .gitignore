@@ -1,8 +1,0 @@
-.sass-cache
-.DS_Store
-_site
-node_modules
-.jekyll-metadata
-_reference/*
-!_reference/experimental.md
-!_reference/validation_errors.md
