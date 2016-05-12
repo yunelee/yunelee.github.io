@@ -1,4 +1,4 @@
-        
+        {% strip %}
         <nav>
           <ul>
             {% for collection in site.collections %}
@@ -45,7 +45,7 @@
                     </li>
                     {% endif %}
                     {% endif %}
-                    
+
                   {% endunless %}
                   {% endfor %}
                   {% if post.numbered %}</ol>{% else %}</ul>{% endif %}
@@ -62,4 +62,4 @@
             {% endfor %}
           </ul>
         </nav>
-        
+        {% endstrip %}
