@@ -2,7 +2,6 @@
 layout: page
 title: نظرة عميقة على AMP Analytics
 order: 1
-locale: ar
 ---
 
 يقدم هذا الدليل رؤية متعمقة على
@@ -281,11 +280,11 @@ locale: ar
   <tbody>
     <tr>
       <td data-th="Transport Method"><code>beacon</code></td>
-      <td data-th="Description">يشير إلى إمكانية استخدام <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon">navigator.sendBeacon</a> لإرسال الطلب. سيرسل هذا طلب <code>POST</code> مع بيانات الاعتماد ونص فارغ.</td>
+      <td data-th="Description">يشير إلى إمكانية استخدام <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon">navigator.sendBeacon</a> لإرسال الطلب. سيرسل هذا طلب <code>POST</code> مع بيانات اعتماد ونص فارغ.</td>
     </tr>
     <tr>
       <td data-th="Transport Method"><code>xhrpost</code></td>
-      <td data-th="Description">يشير إلى إمكانية استخدام <code>XMLHttpRequest</code> لإرسال الطلب. سيرسل هذا طلب <code>POST</code> مع بيانات الاعتماد ونص فارغ.</td>
+      <td data-th="Description">يشير إلى إمكانية استخدام <code>XMLHttpRequest</code> لإرسال الطلب. سيرسل هذا طلب <code>POST</code> مع بيانات اعتماد ونص فارغ.</td>
     </tr>
     <tr>
       <td data-th="Transport Method"><code>image</code></td>
@@ -377,7 +376,7 @@ locale: ar
     </tr>
     <tr>
       <td data-th="var"><code>title</code></td>
-      <td data-th="Value">My homepage</td>
+      <td data-th="Value">الصفحة الرئيسية الخاصة بي</td>
       <td data-th="Defined By">المشغل</td>
     </tr>
     <tr>
