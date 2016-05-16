@@ -2,6 +2,7 @@
 layout: page
 title: Analytics&#58; الأساسيات
 order: 0
+locale: ar
 ---
 
 ابدأ من هنا للتعرّف على أساسيات تحليلات AMP.

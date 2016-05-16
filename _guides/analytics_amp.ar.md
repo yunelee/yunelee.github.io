@@ -3,6 +3,7 @@ layout: page
 title: تهيئة Analytics
 order: 5
 folder: analytics
+locale: ar
 ---
 
 ## اتخذ قرارك قبل البدء

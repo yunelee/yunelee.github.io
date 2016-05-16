@@ -2,6 +2,7 @@
 layout: page
 title: نظرة عميقة على AMP Analytics
 order: 1
+locale: ar
 ---
 
 يقدم هذا الدليل رؤية متعمقة على
